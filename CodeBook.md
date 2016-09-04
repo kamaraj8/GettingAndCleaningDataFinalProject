@@ -27,13 +27,16 @@ Step 4.	Appropriately labels the data set with descriptive variable names.
         
 Step 5.	From the data set in step 4, creates a second, independent tidy data set with the average of each variable for # each activity and each subject.
 
-Variable name    | Description
------------------|------------
-x_train          |Contains data from training data file
-y_train          |Contains data from training data file
-x_test           |Contains data from testing data file
-y_test           |Contains data from testing data file
-subject_train    |Contains subjectid from training data file
-subject_test`    |Contains subjectid from testing data file
+Variable name           | Description
+------------------------|------------
+x_train                 |Contains data from training data file
+y_train                 |Contains data from training data file
+x_test                  |Contains data from testing data file
+y_test                  |Contains data from testing data file
+subject_train           |Contains subjectid from training data file
+subject_test            |Contains subjectid from testing data file
+m_train                 |Column binded data from train data sets
+m_test                  |Column binded data from test data sets
+allData                 |all data combining m_train and m_test by row bind
 
  
