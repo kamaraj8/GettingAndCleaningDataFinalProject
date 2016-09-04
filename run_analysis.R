@@ -42,17 +42,17 @@ unzip(zipfile="./data/Dataset.zip",exdir="./data")
       
       colnames(activityLabels) <- c('activityId','activityType')
 # 	Merge all data into one set
-	m_train <- cbind(y_train, subject_train, x_train)
-    m_test <- cbind(y_test, subject_test, x_test)
-    allData <- rbind(m_train, m_test)
+	merged_training <- cbind(y_train, subject_train, x_train)
+    merged_testing <- cbind(y_test, subject_test, x_test)
+    allData <- rbind(merged_training, merged_testing)
 	
 # Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
 # 	Reading column names:
       colNames <- colnames(allData)
-# Create mean and Standard deviation
+# Create mean and Standard deviation filter
 mean_std <- (grepl("activityId" , colNames) | grepl("subjectId" , colNames) |grepl("mean.." , colNames) | 
-                       grepl("std.." , colNames)                       )
+                       grepl("std.." , colNames))
 
 # Subset for mean and standard deviation
 subsetMeanStd <- allData[ , mean_std == TRUE]
