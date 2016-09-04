@@ -1,4 +1,4 @@
-# Getting And Cleaning Data Final Project
+# Getting And Cleaning Data Project
 
 This repository hosts the documentation, R code, Tidy data set for the Coursera project of Getting and Cleaning Data
 
