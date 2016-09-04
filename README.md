@@ -22,8 +22,10 @@ Here are the data for the project:
  Good luck!
 
 Steps to reproduce the project:
+
 1. Open R studio and set the working directory sith setwd()
 2. Load and run the R code run_analysis.R
+   The download and unzip activity takes longer time
 3. The resulting tiday data set is in "TidyDataSet.txt" file
 
 
