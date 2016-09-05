@@ -41,8 +41,13 @@ x_test                  |Contains data from testing data file
 y_test                  |Contains data from testing data file
 subject_train           |Contains subjectid from training data file
 subject_test            |Contains subjectid from testing data file
-m_train                 |Column binded data from train data sets
-m_test                  |Column binded data from test data sets
+merged_training         |Column binded data from train data sets
+merged_testing          |Column binded data from test data sets
 allData                 |all data combining m_train and m_test by row bind
+colNames                | Column names of all Data
+mean_std                | Filter to create mean and Standard deviation
+subsetMeanStd           | Sub setted data for mean and standard deviation
+setWithActivityNames    | Data set with activity labels
+tidySet                 | Tidy Data Set
 
  
